@@ -1,0 +1,188 @@
+{
+  "dictionary_info": {
+    "name": "Medical Radiomics Glossary",
+    "version": "1.0",
+    "language": "en"
+  },
+  "terms": [
+    {
+      "word": "Radiomics",
+      "part_of_speech": "noun",
+      "definition": "A method that extracts large amounts of features from radiographic medical images using data-characterisation algorithms.",
+      "tags": ["AI", "Imaging", "Analysis"]
+    },
+    {
+      "word": "ROI",
+      "abbreviation_for": "Region of Interest",
+      "part_of_speech": "noun",
+      "definition": "A selected subset of samples within a dataset identified for a particular purpose.",
+      "synonyms": ["Target Area", "Segmented Region"]
+    },
+    {
+      "word": "GLCM",
+      "abbreviation_for": "Gray Level Co-occurrence Matrix",
+      "part_of_speech": "noun",
+      "definition": "A statistical method of examining texture that considers the spatial relationship of pixels.",
+      "related_features": ["Contrast", "Correlation", "Energy", "Homogeneity"]
+
+    },
+    {
+      "word": "SHAP",
+      "abbreviation_for": "SHapley Additive exPlanations",
+      "part_of_speech": "noun",
+      "definition": "A method to explain individual predictions by computing the contribution of each feature to the prediction.",
+      "tags": ["Explainability", "Machine Learning"]
+    },
+    {
+        "word": "original",
+        "part_of_speech": "adjective",
+        "definition": "Refers to the basic, unaltered set of features extracted directly from the image without any transformations or filters applied.",
+        "tags": ["Feature Type", "Filtering"]
+    },
+    {
+        "word": "wavelet",
+        "part_of_speech": "adjective",
+        "definition": "Refers to features extracted from images that have undergone wavelet transformation, which decomposes the image into different frequency components to capture both spatial and frequency information.",
+        "tags": ["Feature Type", "Transformation", "Filtering"]
+    },
+    {
+        "word": "log-sigma",
+        "part_of_speech": "adjective",
+        "definition": "Refers to features derived from images that have been processed using a Laplacian of Gaussian (LoG) filter with a specified sigma value, enhancing edge detection and texture representation at various scales.",
+        "tags": ["Feature Type", "Filtering"]
+    },
+
+    {
+    "word": "square",
+    "part_of_speech": "adjective",
+    "definition": "Refers to features derived from images that have been processed using a square transformation, which involves squaring the pixel intensity values to enhance certain image characteristics.",
+    "tags": ["Feature Type", "Filtering"]
+ },
+ {
+    "word": "logarithm",
+    "part_of_speech": "adjective",
+    "definition": "Refers to features extracted from images that have undergone a logarithmic transformation, which compresses the range of pixel intensity values to enhance contrast in darker regions.",
+    "tags": ["Feature Type", "Transformation", "Filtering"]
+ },
+ {
+    "word": "lbp-3D",
+    "abbreviation_for": "Local Binary Patterns",
+    "part_of_speech": "noun",
+    "definition": "A texture descriptor that summarizes the local structure in an image by comparing each pixel to its neighboring pixels and encoding this information into binary patterns.",
+    "tags": ["Texture Analysis", "Feature Type", "Filtering"]
+ },
+    {
+        "word": "ngtdm",
+        "abbreviation_for": "Neighborhood Gray Tone Difference Matrix",
+        "part_of_speech": "noun",
+        "definition": "A texture analysis method that quantifies the difference between a pixel's gray level and the average gray level of its neighboring pixels, capturing local texture variations.",
+        "tags": ["Texture Analysis", "Feature Type"]
+    },
+    {
+        "word": "gldm",
+        "abbreviation_for": "Gray Level Dependence Matrix",
+        "part_of_speech": "noun",
+        "definition": "A statistical method used in texture analysis that measures the dependence of gray levels in an image, capturing the relationship between a pixel and its neighbors based on intensity values.",
+        "tags": ["Texture Analysis", "Feature Type"]
+    },
+    {
+        "word": "glszm",
+        "abbreviation_for": "Gray Level Size Zone Matrix",
+        "part_of_speech": "noun",
+        "definition": "A texture analysis method that quantifies the size of homogeneous zones for each gray level in an image, providing insights into the distribution and size of texture patterns.",
+        "tags": ["Texture Analysis", "Feature Type"]
+    },
+    {
+        "word": "glrlm",
+        "abbreviation_for": "Gray Level Run Length Matrix",
+        "part_of_speech": "noun",
+        "definition": "A texture analysis method that measures the length of consecutive pixels (runs) with the same gray level in a specified direction, capturing texture patterns related to size and distribution.",
+        "tags": ["Texture Analysis", "Feature Type"]
+    },
+ {
+    "word": "shape",
+    "part_of_speech": "adjective",
+    "definition": "Refers to features that describe the geometric properties of a region of interest (ROI) in an image, such as volume, surface area, sphericity, and compactness.",
+    "tags": ["Feature Type", "Geometry"]
+ },
+
+ {
+    "word": "firstorder",
+    "part_of_speech": "adjective", 
+    "definition": "Refers to features that describe the distribution of individual voxel intensities within the region of interest (ROI), without considering spatial relationships between voxels.",
+    "tags": ["Feature Type", "Statistical"]
+ },
+ {
+    "word": "Sphericity",
+    "part_of_speech": "noun",
+    "definition": "A shape feature that measures how closely the shape of an object approaches that of a perfect sphere. It is calculated as the ratio of the surface area of a sphere (with the same volume as the object) to the surface area of the object.",
+    "tags": ["Shape Feature", "Geometry"]
+ },
+ {
+    "word": "GrayLevelNonUniformity",
+    "part_of_speech": "noun",
+    "definition": "A texture feature derived from the Gray Level Run Length Matrix (GLRLM) that quantifies the variability of gray-level intensity values in an image. A lower value indicates more uniformity, while a higher value indicates greater variability.",
+    "tags": ["Texture Feature", "GLRLM"]
+ },
+ {
+    "word": "SmallAreaEmphasis",
+    "part_of_speech": "noun",
+    "definition": "A texture feature derived from the Gray Level Size Zone Matrix (GLSZM) that emphasizes the presence of small homogeneous zones in an image. Higher values indicate a greater proportion of small areas.",
+    "tags": ["Texture Feature", "GLSZM"]
+ },
+ {
+    "word": "firstorder_Mean",
+    "part_of_speech": "noun",
+    "definition": "A first-order statistical feature that represents the average intensity value of the voxels within the region of interest (ROI) in an image.",
+    "tags": ["First-order Feature", "Statistical"]
+ },
+ {
+    "word": "glcm_Imc2",
+    "part_of_speech": "noun",
+    "definition": "A texture feature derived from the Gray Level Co-occurrence Matrix (GLCM) that measures the complexity of the texture in an image. It quantifies the amount of information contained in the texture patterns.",
+    "tags": ["Texture Feature", "GLCM"]
+ },
+ {
+    "word": "ZonePercentage",
+    "part_of_speech": "noun",
+    "definition": "A texture feature derived from the Gray Level Size Zone Matrix (GLSZM) that quantifies the ratio of the number of zones to the total number of voxels in the region of interest (ROI). It provides insight into the distribution of homogeneous zones within the image.",
+    "tags": ["Texture Feature", "GLSZM"]
+ },
+ {
+    "word": "glcm_Imc1",
+    "part_of_speech": "noun",
+    "definition": "A texture feature derived from the Gray Level Co-occurrence Matrix (GLCM) that measures the complexity of the texture in an image. It quantifies the amount of information contained in the texture patterns.",
+    "tags": ["Texture Feature", "GLCM"]
+ },
+ {
+    "word": "InverseVariance",
+    "part_of_speech": "noun",
+    "definition": "A texture feature derived from the Gray Level Co-occurrence Matrix (GLCM) that measures the local homogeneity of an image. Higher values indicate greater homogeneity, while lower values indicate more contrast.",
+    "tags": ["Texture Feature", "GLCM"]
+ },
+ {
+    "word": "LowGrayLevelZoneEmphasis",
+    "part_of_speech": "noun",
+    "definition": "A texture feature derived from the Gray Level Size Zone Matrix (GLSZM) that emphasizes the presence of low gray-level zones in an image. Higher values indicate a greater proportion of low-intensity areas.",
+    "tags": ["Texture Feature", "GLSZM"]
+ },
+ {
+    "word": "SmallAreaLowGrayLevelEmphasis",
+    "part_of_speech": "noun",
+    "definition": "A texture feature derived from the Gray Level Size Zone Matrix (GLSZM) that emphasizes the presence of small zones with low gray-level intensity in an image. Higher values indicate a greater proportion of small, low-intensity areas.",
+    "tags": ["Texture Feature", "GLSZM"]
+ },
+ {
+    "word": "Uniformity",
+    "part_of_speech": "noun",
+    "definition": "A first-order statistical feature that measures the uniformity of voxel intensity values within the region of interest (ROI) in an image. Higher values indicate more uniform intensity distributions.",
+    "tags": ["First-order Feature", "Statistical"]
+ },
+ {
+    "word": "SizeZoneNonUniformityNormalized",
+    "part_of_speech": "noun",
+    "definition": "A texture feature derived from the Gray Level Size Zone Matrix (GLSZM) that quantifies the variability of zone sizes in an image, normalized by the total number of zones. Lower values indicate more uniform zone sizes.",
+    "tags": ["Texture Feature", "GLSZM"]
+ }
+]
+}
